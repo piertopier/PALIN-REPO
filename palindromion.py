@@ -22,23 +22,23 @@ def sansblanc(chaine):
 ##
 ## Corps du programme
 ##
-## playagain = "o"
-## while playagain == "o" :
-candid=input("Entre une chaine de caracteres :")
-candidate = sansblanc(candid)
-lg=len(candidate)
-lg2=int(lg/2)
+playagain = "o"
+while playagain == "o" :
+    candid=input("Entre une chaine de caracteres :")
+    candidate = sansblanc(candid)
+    lg=len(candidate)
+    lg2=int(lg/2)
 
-for i in range(lg2+1) :
+    for i in range(lg2+1) :
 ##   print (candidate[i])
-    if candidate[i]== candidate[lg-1-i]:
-        palOK=("Ceci est un palindrome")
-        continue
-    else:
-        palOK = ( "Ceci n'est pas un palindrome")
-        break
-print(palOK)
-## playagain=input("on continue? (o/n)")
+        if candidate[i]== candidate[lg-1-i]:
+            palOK=("Ceci est un palindrome")
+            continue
+        else:
+            palOK = ( "Ceci n'est pas un palindrome")
+            break
+    print(palOK)
+    playagain=input("on continue? (o/n)")
 ##
 ##
 print("C'est fini !")
